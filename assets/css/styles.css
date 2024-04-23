@@ -1,2 +1,59 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/*==================== VARIABLES CSS ====================*/
+
+:root {
+  --header-height: 5.5rem;
+
+  /*========== Colors ==========*/
+
+  /* Primary */
+  --primary-500: hsla(0, 60%, 35%, 1);
+  --primary-400: hsla(5, 44%, 53%, 1);
+  --primary-300: hsla(10, 59%, 67%, 1);
+  --primary-200: hsla(16, 75%, 81%, 1);
+  --primary-100: hsla(21, 76%, 90%, 1);
+  --primary-50: hsla(21, 50%, 92%, 1);
+  --primary-40: hsla(20, 37%, 92%, 1);
+  --primary-30: hsla(20, 100%, 98%, 1);
+
+  /* Neutral */
+  --neutralcolors-10: hsla(213, 44%, 95%, 1);
+  --neutralcolors-20: hsla(215, 46%, 91%, 1);
+  --neutralcolors-30: hsla(217, 30%, 79%, 1);
+  --neutralcolors-40: hsla(219, 17%, 65%, 1);
+  --neutralcolors-50: hsla(221, 13%, 46%, 1);
+  --neutralcolors-60: hsla(222, 21%, 37%, 1);
+  --neutralcolors-70: hsla(225, 30%, 29%, 1);
+  --neutralcolors-80: hsla(227, 41%, 21%, 1);
+  --neutralcolors-90: hsla(229, 54%, 16%, 1);
+  --neutralcolors-100: hsla(229, 53%, 7%, 1);
+  --neutralcolors-white: hsla(0, 0%, 100%, 1);
+  --neutralcolors-black: hsla(0, 0%, 10%, 1);
+  --neutralcolors-graylight: hsla(210, 20%, 98%, 1);
+
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Inter', sans-serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+
+  /* Heading Regular */
+  --h1-font-size: 4rem;
+  --h2-font-size: 3.5rem;
+  --h3-font-size: 3rem;
+  --h4-font-size: 2.5rem;
+  --h5-font-size: 2rem;
+  --h6-font-size: 1.5rem;
+  --h7-font-size: 1.25rem;
+
+
+  /*========== Font weight ==========*/
+
+  /*========== Margenes Bottom ==========*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+
+  /*========== z index ==========*/
+
+}
