@@ -4,7 +4,7 @@
 /*==================== VARIABLES CSS ====================*/
 
 :root {
-  --header-height: 5.5rem;
+  --header-height: 4rem;
 
   /*========== Colors ==========*/
 
@@ -33,13 +33,20 @@
   --neutralcolors-black: hsla(0, 0%, 10%, 1);
   --neutralcolors-graylight: hsla(210, 20%, 98%, 1);
 
+  /*========== Box-shadow ==========*/
+  --blur-4: 0px 1px 4px 0px rgba(0, 0, 0, 0.20);
+  --blur-8: 0px 2px 8px 0px rgba(0, 0, 0, 0.20);
+  --blur-16: 0px 4px 16px 0px rgba(0, 0, 0, 0.20);
+  --blur-24: 0px 6px 24px 0px rgba(0, 0, 0, 0.20);
+  --blur-32: 0px 8px 32px 0px rgba(0, 0, 0, 0.20);
+
 
   /*========== Font and typography ==========*/
   --body-font: 'Inter', sans-serif;
 
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
 
-  /* Heading Regular */
+  /* Heading*/
   --h1-font-size: 4rem;
   --h2-font-size: 3.5rem;
   --h3-font-size: 3rem;
@@ -48,12 +55,291 @@
   --h6-font-size: 1.5rem;
   --h7-font-size: 1.25rem;
 
+  /* Body */
+  --body-1-font-size: 1.5rem;
+  --body-2-font-size: 1.25rem;
+  --body-3-font-size: 1rem;
+  --body-4-font-size: 0.875rem;
+  --body-5-font-size: 0.75rem;
+
+  /* Buttons e Links */
+  --button-link-l: 1.125rem;
+  --button-link-m: 1rem;
+  --button-link-s: 0.875rem;
+  --button-link-xs: 0.75rem;
+
+  /* Fields */
+  --text-placeholder: 1rem;
+  --text-description: 0.75rem;
+  --text-title: 0.75rem;
+  --text-title: 0.5rem;
 
   /*========== Font weight ==========*/
+  --font-light: 300;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
 
   /*========== Margenes Bottom ==========*/
   /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mb-0-5: 0.5rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-4: 4rem;
+  --mb-5: 5rem;
+  --mb-6: 6rem;
+  --mb-7-5: 7.5rem;
 
   /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
 
+}
+
+/* Font size for large devices */
+
+/*==================== BASE ====================*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--body-3-font-size);
+  background-color: var(--neutralcolors-white);
+  color: var(--neutralcolors-50);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--neutralcolors-100);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+.section {
+  padding: 2.5rem 0 5.19rem;
+}
+
+.section__title {
+  font-size: var(--h7-font-size);
+  color: var(--neutralcolors-100);
+}
+
+.section__subtitle {
+  color: var(--neutralcolors-50);
+  display: block;
+  font-size: var(--body-5-font-size);
+  line-height: 160%;
+  margin-bottom: var(--mb-2-5);
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+/*==================== LAYOUT ====================*/
+.container {
+  max-width: 768px;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.grid {
+  display: grid;
+  gap: var(--mb-1);
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--neutralcolors-white);
+  box-shadow: var(--blur-4);
+}
+
+/*==================== NAV ====================*/
+.nav {
+  max-width: 968px;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ri-menu-line {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav__toggle:hover {
+  color: var(--primary-500);
+  transition: .3s;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgb(0, 0, 0, .15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: .3s;
+  }
+}
+
+.nav__List {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  font-size: var(--h7-font-size);
+  color: var(--neutralcolors-100);
+  font-weight: var(--font-semi-bold);
+}
+
+.nav__link:hover {
+  color: var(--primary-500);
+  transition: .3s;
+}
+
+.nav__icon {
+  font-size: 1.2rem;
+}
+
+.nav__close {
+  position: absolute;
+  right: 1.3rem;
+  top: .5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--neutralcolors-50);
+}
+
+.nav__close:hover {
+  color: var(--primary-500);
+  transition: .3s;
+}
+
+/* show menu */
+.show-menu {
+  bottom: 0;
+}
+
+/* Active link */
+.active-link {
+  color: var(--primary-500);
+}
+
+/*==================== HOME ====================*/
+.home__container {
+  gap: 1rem;
+}
+
+.home__content {
+  grid-template-columns: 1fr;
+  padding-top: 6.5rem;
+  align-items: center;
+  text-align: center;
+  width: 15.25rem;
+  margin: 0 auto;
+
+}
+
+.home__data {
+  display: grid;
+  gap: 0.5rem;
+  grid-column: 1/3;
+}
+
+.home__tag {
+  font-size: var(--body-5-font-size);
+  font-weight: var(--font-bold);
+  color: var(--primary-500);
+}
+
+.home__title {
+  font-size: var(--h6-font-size);
+  font-weight: var(--font-bold);
+  color: var(--neutralcolors-100);
+}
+
+.home__description {
+  color: var(--neutralcolors-50);
+  font-size: var(--body-5-font-size);
+  line-height: 160%;
+}
+
+/* Stats */
+
+.home__stats {
+  margin-top: var(--mb-2-5);
+}
+
+.stats__data {}
+
+.stats__info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2.5rem;
+  gap: 1.5rem;
+}
+
+.stats__content {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.stats__info-number {
+  font-size: var(--h5-font-size);
+  font-weight: var(--font-semi-bold);
+  line-height: 120%;
+  color: var(--primary-500);
+}
+
+.stats__info-title {
+  font-size: var(--body-5-font-size);
+  line-height: 160%;
+  color: var(--neutralcolors-90);
+}
+
+.stats__description {
+  font-size: var(--text-title);
+  color: var(--neutralcolors-50);
 }
