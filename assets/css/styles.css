@@ -146,22 +146,22 @@ img {
   padding: 2.5rem 0 5.19rem;
 }
 
+.section__tag {
+  font-size: var(--body-5-font-size);
+  font-weight: var(--font-bold);
+  color: var(--primary-500);
+}
+
 .section__title {
-  font-size: var(--h7-font-size);
+  font-size: var(--h6-font-size);
+  font-weight: var(--font-bold);
   color: var(--neutralcolors-100);
 }
 
-.section__subtitle {
+.section__description {
   color: var(--neutralcolors-50);
-  display: block;
   font-size: var(--body-5-font-size);
   line-height: 160%;
-  margin-bottom: var(--mb-2-5);
-}
-
-.section__title,
-.section__subtitle {
-  text-align: center;
 }
 
 /*==================== LAYOUT ====================*/
@@ -173,7 +173,7 @@ img {
 
 .grid {
   display: grid;
-  gap: var(--mb-1);
+  row-gap: var(--mb-1);
 }
 
 .header {
@@ -276,7 +276,6 @@ img {
   padding-top: 6.5rem;
   align-items: center;
   text-align: center;
-  width: 15.25rem;
   margin: 0 auto;
 
 }
@@ -287,31 +286,11 @@ img {
   grid-column: 1/3;
 }
 
-.home__tag {
-  font-size: var(--body-5-font-size);
-  font-weight: var(--font-bold);
-  color: var(--primary-500);
-}
-
-.home__title {
-  font-size: var(--h6-font-size);
-  font-weight: var(--font-bold);
-  color: var(--neutralcolors-100);
-}
-
-.home__description {
-  color: var(--neutralcolors-50);
-  font-size: var(--body-5-font-size);
-  line-height: 160%;
-}
-
 /* Stats */
 
 .home__stats {
   margin-top: var(--mb-2-5);
 }
-
-.stats__data {}
 
 .stats__info {
   display: grid;
@@ -342,4 +321,84 @@ img {
 .stats__description {
   font-size: var(--text-title);
   color: var(--neutralcolors-50);
+}
+
+/*==================== VAGAS ABERTAS ====================*/
+.vagas__container.container.grid {
+  margin: 0;
+  row-gap: 0;
+}
+
+.vagas__section {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 1.25rem 0 1.25rem;
+}
+
+.tag__vagas {
+  font-size: var(--body-5-font-size);
+  color: var(--primary-500);
+  text-align: center;
+  background-color: var(--primary-50);
+  border-radius: 0.1875rem;
+  padding: 0.19rem 1rem 0.19rem 0.94rem;
+}
+
+.vagas-title {
+  padding: 1rem 0 1rem 0;
+}
+
+.vagas-description {
+  margin: 0 auto;
+  width: 13.3125rem;
+  padding-bottom: 1.5rem;
+}
+
+.vagas__info {
+  text-align: left;
+  float: left;
+}
+
+.product-design,
+.front-end {
+  padding-bottom: 1rem;
+}
+
+.vagas__info-title {
+  font-size: var(--body-4-font-size);
+  font-weight: var(--font-medium);
+  line-height: 150%;
+  color: var(--neutralcolors-90);
+  padding: 2.94rem 0 1rem 0rem;
+  display: flex;
+}
+
+.vagas__cargo {
+  border-radius: 0.5rem;
+  border: 1px solid var(--neutralcolors-10);
+  background: var(--neutralcolors-white);
+  padding: 1.06rem 0 1.11rem 1rem;
+  width: 17.5rem;
+}
+
+.vagas__cargo-nome {
+  font-size: var(--body-5-font-size);
+  color: var(--neutralcolors-100);
+  line-height: 160%;
+  font-weight: var(--font-medium);
+}
+
+.vagas__cargo-tempo,
+.vagas__cargo-salario {
+  font-size: var(--text-title);
+  color: var(--neutralcolors-50);
+}
+
+.vagas__add-info {
+  display: inline-flex;
+  column-gap: 1.5rem;
+}
+
+.desenvolvimento-software {
+  padding: 1.5rem 0 1rem 0;
 }
