@@ -4,41 +4,44 @@
 
 <i>Esta empresa é fictícia para fins acadêmicos que foi criada pela Alura para treinamento de HTML e CSS</i>
 
-Este projeto, desenvolvido como parte de um desafio proposto pela Alura, teve a duração de 7 dias e exigiu a criação de um site utilizando apenas HTML e CSS, sem a utilização de bibliotecas. Porém eu utilizei o framework <strong>Animate.css</strong>.
+Este projeto, desenvolvido como parte de um desafio proposto pela Alura, teve a duração de 7 dias e exigiu a criação de um site utilizando apenas HTML e CSS, sem o uso de bibliotecas. No entanto, para a versão mobile, utilizei <strong>JavaScript</strong> para alguns efeitos responsivo.
 
 O desafio visava explorar e aplicar todo o conhecimento adquirido no curso de HTML e CSS fornecido pela Alura.
 
 O objetivo principal era reproduzir fielmente o layout fornecido no seguinte link: [Figma - 7daysOfCode](https://www.figma.com/file/mm3MLozvUDGhDRTxSLlGL5/7daysOfCode-HTML-CSS?type=design&node-id=0-9878&mode=design&t=Mk5PYOPrzmVEpy5D-0).
 
-Além de replicar o design proposto, foram realizadas algumas implementações adicionais para aprimorar a experiência do usuário, como a integração de animações utilizando o Animate.css. Também foram adicionados efeitos de hover para proporcionar uma interação mais suave e agradável ao usuário.
+Aproveitando meu conhecimento em UI/UX Design, decidi duplicar o layout fornecido e aprimorá-lo sem perder totalmente a estética original. Dessa forma, desenvolvi um Design System, versões para tablet e mobile, e páginas adicionais "Produtos", "Recursos" e "Sobre nós".
 
-Destaca-se que o projeto foi concluído em um período de apenas 4 dias, demonstrando eficiência e habilidade no desenvolvimento de soluções web.
+Segue o link do meu projeto no Figma caso deseja utilizar ele: [OptimusTech](https://www.figma.com/file/MbFR1DfDoXD0CDykm6SCeJ/OptimusTech?type=design&node-id=82901%3A2&mode=design&t=MN753RXD50SMdPxY-1).
 
 <h1 align="center"> Apresentação do Projeto por Partes </h1>
 
 O escopo deste projeto consistiu no desenvolvimento da página principal do site, comumente conhecida como "Home". Abaixo, segue uma lista detalhada dos elementos implementados:
 
 <ul>
-    <li><strong>Header</strong> - Localizado no topo da página, abriga a barra de navegação (Navbar) do site. Facilita o acesso do usuário ao cadastro ou login no site, além de fornecer atalhos para diversas páginas internas. Nesta parte eu implementei várias animações como "hover" para melhor interação do Usuário </li>
-    <li><strong>Cabeçalho</strong> - Apresenta uma breve demonstração da empresa, destacando suas principais características. Foi replicado fielmente conforme o layout fornecido no Figma. </li>
-    <li><strong>Métricas</strong> - Esta seção representou um desafio, uma vez que envolvia o uso do flex-box. Apesar das dificuldades iniciais, consegui resolver eficientemente, buscando manter a fidelidade ao design do Figma. Acrescentei um sutil efeito de "hover" nos números, proporcionando uma variação de tonalidade ao passar o cursor sobre eles, visando uma experiência diferenciada. </li>
-    <li><strong>Vagas</strong> - Na área destinada às vagas, apliquei os conhecimentos adquiridos sobre flex-box de forma mais avançada. Busquei seguir rigorosamente o layout, com uma diferenciação na aplicação do efeito "hover" nos títulos das funções das vagas em aberto, visando uma interação mais acessível ao usuário. </li>
+    <li><strong>Header</strong> - Localizado no topo da página, o Header abriga a barra de navegação (Navbar) do site. Facilita o acesso do usuário ao cadastro ou login no site, além de fornecer atalhos para diversas páginas internas. Nesta parte, implementei várias animações, como "hover", para uma melhor interação do usuário. </li>
+    <li><strong>Cabeçalho</strong> - Apresenta uma breve demonstração da empresa, destacando suas principais características. Foi replicado conforme o layout fornecido no Figma, garantindo fidelidade ao design original. </li>
+    <li><strong>Métricas</strong> - Esta seção representou um desafio, uma vez que envolvia o uso do flex-box. Apesar das dificuldades iniciais, consegui resolver eficientemente, buscando manter a fidelidade ao design do Figma. </li>
+    <li><strong>Vagas</strong> - Na área destinada às vagas, apliquei os conhecimentos adquiridos sobre flex-box de forma mais avançada. Busquei seguir rigorosamente o layout. </li>
     <li><strong>Depoimentos</strong> - Esta seção foi relativamente simples de ser implementada, não exigindo grandes preocupações com o display. O tempo de conclusão foi otimizado. </li>
     <li><strong>Formulário</strong> - A construção do formulário foi facilitada pelo posicionamento pré-estabelecido, proporcionando uma implementação descomplicada. As dificuldades foram minimizadas, resultando em uma conclusão eficiente. </li>
 </ul>
 
-O projeto foi desenvolvido com atenção aos detalhes, buscando não apenas replicar o design, mas também aprimorar a experiência do usuário através de elementos como efeitos "hover" e disposição intuitiva de informações.
+O projeto foi desenvolvido com atenção aos detalhes, buscando não apenas replicar o design, mas também aprimorar a experiência do usuário através de elementos.
 
-Tenho a intenção de prosseguir com o projeto, tornando-o responsivo e incorporando páginas, com o objetivo de finalizá-lo como um website de portfólio completo.
-
+Ainda pretendo prosseguir com o projeto, incorporando as demais páginas que ficou faltando, com o objetivo de finalizá-lo como um website de portfólio completo.
 
 <h1 align="center"> Reflexão sobre o Desenvolvimento do Projeto: Conquista de Autonomia na Programação e Busca por Excelência </h1>
 
-Conquistei, de maneira assertiva, autonomia no âmbito da programação, demonstrando habilidade para enfrentar desafios e buscar soluções durante o desenvolvimento do website. Este desafio permitiu-me explorar meu potencial ao pesquisar e resolver problemas existentes de maneira ágil.
+Durante o desenvolvimento deste projeto, adotei a abordagem mobile first, o que se revelou uma escolha acertada. Começar pelo design e desenvolvimento para dispositivos móveis não apenas facilitou a adaptação para telas maiores, como também me permitiu focar na essência do conteúdo e na experiência do usuário em dispositivos com restrições de tamanho.
 
-O projeto foi conduzido de maneira independente, sem a solicitação de assistência da equipe da Alura, apesar da oferta de suporte por parte desta. Embora meu código possa não estar isento de possíveis aprimoramentos, gostaria de convidar o leitor a compartilhar sua opinião sobre como poderia ter aprimorado o projeto ou torná-lo mais claro, seguindo as diretrizes do <strong>Clean Code</strong>.
+Essa abordagem me desafiou a repensar a organização e disposição dos elementos, buscando a máxima eficiência e usabilidade em espaços reduzidos. Foi necessário priorizar informações e funcionalidades, garantindo que o site oferecesse uma experiência satisfatória em qualquer dispositivo.
 
-Sinta-se à vontade para oferecer sua análise crítica e opiniões construtivas sobre o projeto. Estou aberto a sugestões que possam contribuir para o refinamento do código e aprimoramento geral do projeto.
+Durante esse processo, conquistei uma maior autonomia na programação, encontrando soluções criativas e eficientes para os desafios apresentados. Cada etapa do desenvolvimento foi marcada pela busca incessante por excelência, desde a fidelidade ao design original até a implementação de elementos interativos, como efeitos "hover".
+
+A escolha do mobile first foi uma decisão estratégica que me permitiu não apenas criar um site responsivo, mas também desenvolver uma mentalidade centrada no usuário. Com a conclusão desta etapa, estou motivado a continuar aprimorando minhas habilidades e a buscar constantemente a excelência em meus projetos futuros, sempre com foco na melhor experiência do usuário em todas as plataformas.
+
+Embora meu código possa não estar isento de possíveis aprimoramentos, gostaria de convidar o leitor a compartilhar sua opinião sobre como poderia ter aprimorado o projeto ou torná-lo mais claro, seguindo as diretrizes do <strong>Clean Code</strong>. Estou aberto a feedbacks e sugestões para melhorias futuras.
 
 <h1>ENGLISH VERSION</h1>
 
