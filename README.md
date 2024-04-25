@@ -8,7 +8,7 @@ O objetivo principal era reproduzir fielmente o layout fornecido no seguinte lin
 
 Aproveitando meu conhecimento em UI/UX Design, decidi duplicar o layout fornecido e aprimorá-lo sem perder totalmente a estética original. Dessa forma, desenvolvi um Design System, versões para tablet e mobile, e páginas adicionais "Produtos", "Recursos" e "Sobre nós".
 
-Segue o link do meu projeto no Figma caso deseja utilizar ele: [OptimusTech Figma](https://www.figma.com/file/MbFR1DfDoXD0CDykm6SCeJ/OptimusTech?type=design&node-id=82901%3A2&mode=design&t=MN753RXD50SMdPxY-1).
+Segue o link do meu projeto no Figma caso deseja utilizar ele: [OptimusTech Figma](https://www.figma.com/file/MbFR1DfDoXD0CDykm6SCeJ/OptimusTech?type=design&node-id=82901%3A2&mode=design&t=MN753RXD50SMdPxY-1).<br>
 Segue o link do Github Pages: [OptimusTech](https://juliusmatheusdesign.github.io/OptimusTechAlura/).
 
 <h1 align="center"> Apresentação do Projeto por Partes </h1>
