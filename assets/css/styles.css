@@ -402,3 +402,53 @@ img {
 .desenvolvimento-software {
   padding: 1.5rem 0 1rem 0;
 }
+
+/*==================== DEPOIMENTOS ====================*/
+.depoimentos__section {
+  padding: 5rem 1.25rem 5rem 1.25rem;
+}
+
+.depoimentos__container {
+  background-color: var(--primary-30);
+  border-radius: 0.5rem;
+  padding: 1.75rem 1.88rem 1.69rem 1.88rem;
+  text-align: center;
+}
+
+.depoimentos__sub-title {
+  font-size: var(--text-title);
+  color: var(--primary-500);
+}
+
+.depoismentos__title {
+  font-size: var(--body-4-font-size);
+  color: var(--neutralcolors-100);
+  line-height: 150%;
+  font-weight: var(--font-bold);
+  padding: 0.5rem 0 1.5rem 0;
+}
+
+.avatar__funcionario {
+  overflow: hidden;
+  width: 2.375rem;
+  height: 2.375rem;
+  border-radius: 2.375rem;
+  margin: 0 auto;
+}
+
+.avatar__funcionario-img {
+  width: 100%;
+}
+
+.nome__funcionario {
+  padding-top: 0.5rem;
+  font-size: var(--body-5-font-size);
+  color: var(--neutralcolors-100);
+  line-height: 160%;
+  font-weight: var(--font-medium);
+}
+
+.cargo__funcionario {
+  font-size: var(--text-title);
+  color: var(--neutralcolors-50);
+}
