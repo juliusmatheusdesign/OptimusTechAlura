@@ -597,3 +597,145 @@ input[type=text]::placeholder {
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--text-color-light);
 }
+
+/*==================== MEDIA QUERIES ====================*/
+/* For medium devices */
+@media screen and (min-width: 568px) {
+
+  .stats__content {
+    gap: 0.5rem;
+  }
+
+  .section__title {
+    font-size: var(--h5-font-size);
+    font-weight: var(--font-bold);
+    color: var(--neutralcolors-100);
+  }
+
+  .section__description {
+    color: var(--neutralcolors-50);
+    font-size: var(--body-3-font-size);
+    line-height: 160%;
+  }
+
+  .stats__info {
+    display: inline-flex;
+    column-gap: 1.69rem;
+    text-align: left;
+  }
+
+  .stats__info-number {
+    font-size: var(--h4-font-size);
+    font-weight: var(--font-semi-bold);
+    line-height: 120%;
+    color: var(--primary-500);
+  }
+
+  .stats__info-title {
+    font-size: var(--body-5-font-size);
+    line-height: normal;
+    color: var(--neutralcolors-90);
+    font-weight: var(--font-bold);
+  }
+
+  .stats__description {
+    font-size: var(--text-description);
+    color: var(--neutralcolors-50);
+  }
+
+  .vagas__section {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 1.25rem 0 1.25rem;
+  }
+
+  .vagas-description {
+    margin: 0 auto;
+    width: auto;
+    padding-bottom: 1.5rem;
+  }
+
+  .img__vagas {
+    width: 43rem;
+    border-radius: 0.5rem;
+  }
+
+  .vagas__info-title {
+    font-size: var(--body-2-font-size);
+    font-weight: var(--font-medium);
+    line-height: 150%;
+    color: var(--neutralcolors-90);
+    padding: 2.94rem 0 1rem 0rem;
+    display: flex;
+  }
+
+  .vagas__container.container.grid {
+    margin: 0;
+    row-gap: 0;
+    padding: 0 5rem;
+  }
+
+  .vagas__cargo {
+    border-radius: 0.5rem;
+    border: 1px solid var(--neutralcolors-10);
+    background: var(--neutralcolors-white);
+    padding: 1.06rem 0 1.11rem 1rem;
+    width: 100%;
+  }
+
+  .vagas__cargo-nome {
+    font-size: var(--body-3-font-size);
+    color: var(--neutralcolors-100);
+    line-height: 160%;
+    font-weight: var(--font-medium);
+  }
+
+  .vagas__cargo-tempo,
+  .vagas__cargo-salario {
+    font-size: var(--body-5-font-size);
+    color: var(--neutralcolors-50);
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .section__title {
+    font-size: var(--h5-font-size);
+    font-weight: var(--font-bold);
+    color: var(--neutralcolors-100);
+  }
+
+  .section__description {
+    color: var(--neutralcolors-50);
+    font-size: var(--body-3-font-size);
+    line-height: 160%;
+  }
+
+  .stats__info {
+    display: inline-flex;
+    column-gap: 1.69rem;
+    text-align: left;
+  }
+
+  .stats__info-number {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    line-height: 120%;
+    color: var(--primary-500);
+  }
+
+  .stats__info-title {
+    font-size: var(--body-3-font-size);
+    line-height: 160%;
+    color: var(--neutralcolors-90);
+  }
+
+  .stats__description {
+    font-size: var(--body-5-font-size);
+    color: var(--neutralcolors-50);
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {}
