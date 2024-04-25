@@ -113,7 +113,6 @@ html {
 }
 
 body {
-  margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
   font-size: var(--body-3-font-size);
   background-color: var(--neutralcolors-white);
@@ -211,10 +210,9 @@ img {
     bottom: -100%;
     left: 0;
     width: 100%;
-    background-color: var(--body-color);
-    padding: 2rem 1.5rem 4rem;
-    box-shadow: 0 -1px 4px rgb(0, 0, 0, .15);
-    border-radius: 1.5rem 1.5rem 0 0;
+    background-color: var(--neutralcolors-white);
+    padding: 2rem 1.5rem 0rem;
+    box-shadow: var(--blur-4);
     transition: .3s;
   }
 }
@@ -245,10 +243,15 @@ img {
 .nav__close {
   position: absolute;
   right: 1.3rem;
-  top: .5rem;
+  top: 1rem;
   font-size: 2rem;
   cursor: pointer;
   color: var(--neutralcolors-50);
+}
+
+.logo-mobile {
+  position: relative;
+  top: -0.9rem;
 }
 
 .nav__close:hover {
@@ -256,14 +259,60 @@ img {
   transition: .3s;
 }
 
+.ri-menu-line:hover {
+  color: var(--primary-500);
+  transition: .3s;
+}
+
 /* show menu */
 .show-menu {
-  bottom: 0;
+  bottom: 44.3%;
 }
 
 /* Active link */
 .active-link {
   color: var(--primary-500);
+}
+
+.btns__menu {
+  padding: 1.5rem 0 1.38rem 0;
+}
+
+.login__btns {
+  border-radius: 0.1875rem;
+  border: 1px solid var(--primary-500);
+  display: flex;
+  width: 17.5rem;
+  padding: 0.75rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.login__btns a {
+  color: var(--primary-500);
+  font-size: var(--body-5-font-size);
+  line-height: 150%;
+  font-weight: var(--font-bold);
+}
+
+.register__btns {
+  border-radius: 0.1875rem;
+  background: var(--primary-500);
+  display: flex;
+  width: 17.5rem;
+  padding: 0.75rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.register__btns a {
+  color: var(--neutralcolors-white);
+  font-size: var(--body-5-font-size);
+  line-height: 150%;
+  font-weight: var(--font-bold);
 }
 
 /*==================== HOME ====================*/
@@ -357,6 +406,7 @@ img {
 .vagas__info {
   text-align: left;
   float: left;
+  width: 100%;
 }
 
 .product-design,
@@ -451,4 +501,99 @@ img {
 .cargo__funcionario {
   font-size: var(--text-title);
   color: var(--neutralcolors-50);
+}
+
+/*==================== FOOTER ====================*/
+.footer {
+  text-align: center;
+  position: sticky;
+}
+
+.footer__bg {
+  background-color: var(--neutralcolors-graylight);
+  padding: 1.63rem 0rem 1.62rem 0rem;
+}
+
+.newslleter-optimus {
+  display: inline-flex;
+  column-gap: 0.5rem;
+  margin: 0 auto;
+}
+
+input[type=text] {
+  background: var(--neutralcolors-white);
+  border-radius: 0.1875rem;
+  border: 1px solid var(--neutralcolors-30);
+  padding: 0.81rem 0rem 0.75rem 0.5rem;
+  height: 2.5rem;
+}
+
+input[type=text]::placeholder {
+  font-size: var(--text-description);
+  color: var(--neutralcolors-40);
+}
+
+.btns-newslleter {
+  background-color: var(--primary-500);
+  border-radius: 0.1875rem;
+  color: var(--neutralcolors-white);
+  font-size: var(--body-5-font-size);
+  line-height: 150%;
+  font-weight: var(--font-bold);
+  border: none;
+  display: flex;
+  padding: 0.75rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 5.5rem;
+  height: 2.5rem;
+}
+
+.creditos__footer {
+  font-size: var(--text-title);
+  color: var(--neutralcolors-40);
+}
+
+/*========== SCROLL UP ==========*/
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  background-color: var(--primary-500);
+  opacity: .8;
+  padding: .3rem .3rem;
+  border-radius: .4rem;
+  z-index: var(--z-tooltip);
+  transition: .4s;
+}
+
+.scrollup:hover {
+  background-color: var(--primary-500);
+}
+
+.scrollup__icon {
+  font-size: 1.2rem;
+  color: var(--neutralcolors-white);
+}
+
+/* Show scroll */
+.show-scroll {
+  bottom: 5rem;
+}
+
+/*========== SCROLL BAR ==========*/
+::-webkit-scrollbar {
+  width: .60rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-color-light);
 }
